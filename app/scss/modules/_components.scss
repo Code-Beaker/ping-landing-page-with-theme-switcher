@@ -9,6 +9,7 @@
 
   &:active {
     scale: 0.975;
+    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
   }
 
   &:focus-visible {
@@ -33,6 +34,7 @@
 
   &:hover {
     opacity: 0.85;
+    box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
   }
 
   &:active {

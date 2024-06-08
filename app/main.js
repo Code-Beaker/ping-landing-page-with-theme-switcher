@@ -8,6 +8,9 @@ const form = document.getElementById("form");
 const emailInput = document.getElementById("emailInput");
 const emailStatus = document.querySelector(".form__label");
 const toggleTheme = document.getElementById("themeToggle");
+const footerYear = document.getElementById("year");
+
+footerYear.textContent = new Date().getFullYear();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
