@@ -1,0 +1,45 @@
+@mixin inputField($color, $font) {
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid $color;
+  font-family: $font;
+  outline-offset: 0.125rem;
+  transition: 0.25s ease;
+  font-size: var(--step-0);
+
+  &:active {
+    scale: 0.975;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid currentColor;
+  }
+}
+
+@mixin button($color, $font, $background, $weight) {
+  color: $color;
+  font-size: var(--step-0);
+  font-family: $font;
+  display: block;
+  min-width: fit-content;
+  background-color: $background;
+  font-weight: $weight;
+  border-radius: 5rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  outline-offset: 0.125rem;
+  transition: 0.25s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    scale: 0.975;
+  }
+
+  &:focus-visible {
+    outline: 0.125rem solid $background;
+  }
+}

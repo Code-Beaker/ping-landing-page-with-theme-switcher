@@ -1,0 +1,16 @@
+// ============
+// == COLORS ==
+// ============
+$colors: (
+  primary__blue: hsl(223, 87%, 63%),
+  primary__green: hsl(145, 63%, 49%),
+  secondary__pale-blue: hsl(223, 100%, 88%),
+  secondary__light-red: hsl(354, 100%, 66%),
+  neutral__gray: hsl(0, 0%, 59%),
+  neutral__very-dark-blue: hsl(209, 33%, 12%),
+  neutral__dark: hsl(224, 26%, 17%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

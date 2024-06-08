@@ -1,0 +1,21 @@
+$fons: (
+  title: "JoseFin Sans",
+  text: "Inter",
+);
+
+@function font($font-name) {
+  @return map-get($fons, $font-name);
+}
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}

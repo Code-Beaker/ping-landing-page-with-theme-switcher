@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping | Coming Soon</title>
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="theme-toggle-wrapper">
+        <button class="toggle-theme" id="themeToggle">
+          <i
+            id="toggleIcon"
+            aria-label="dark theme"
+            aria-hidden="false"
+            class="bi bi-moon"
+          ></i>
+        </button>
+      </div>
+      <div class="content__cols">
+        <section class="text-content">
+          <div class="logo-center">
+            <a href="index.html" class="logo-link">
+              <img class="logo" src="assets/images/logo.svg" alt="" />
+            </a>
+          </div>
+          <h1 class="text-content__heading">
+            We are launching <b class="text-bold">soon!</b>
+          </h1>
+          <h2 class="text-content__subheading">Subscribe and get notified.</h2>
+          <form action="index.html" novalidate class="form" id="form">
+            <label class="form__label" for="emailInput">Enter your email</label>
+            <div class="form__cols">
+              <input
+                type="email"
+                placeholder="email@example.com"
+                id="emailInput"
+                class="form__input"
+              />
+              <button class="form__submit" type="submit">Notify me</button>
+            </div>
+          </form>
+        </section>
+        <div class="content__image-center">
+          <img
+            class="content__image"
+            src="assets/images/illustration-dashboard.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
