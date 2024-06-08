@@ -1,5 +1,5 @@
 @mixin inputField($color, $font) {
-  border-radius: 5rem;
+  border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
   border: 2px solid $color;
   font-family: $font;
@@ -24,7 +24,7 @@
   min-width: fit-content;
   background-color: $background;
   font-weight: $weight;
-  border-radius: 5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   padding: 0.75rem 1.5rem;
