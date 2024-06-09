@@ -31,22 +31,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--step-1);
     border-radius: 5rem;
     border: none;
     font-family: m.font(title);
-    border: 2px solid m.color(primary__blue);
+    // border: 2px solid m.color(primary__blue);
     color: m.color(primary__blue);
     cursor: pointer;
     background-color: transparent;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    transition: 0.25s ease;
+    // box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: scale 125ms ease;
 
     i {
-      display: block;
+      display: inline-block;
     }
 
     &:hover {
-      box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      color: white;
+      background-color: m.color(primary__blue);
+    }
+
+    &:active {
+      scale: 0.95;
     }
   }
 }
@@ -191,10 +197,11 @@ body {
   }
 
   .toggle-theme {
-    background-color: white;
-    // color: m.color(primary__green);
-    color: m.color(neutral__dark);
-    border: 2px solid m.color(primary__green);
+    color: m.color(primary__green);
+
+    &:hover {
+      background-color: m.color(primary__green);
+    }
   }
 
   .text-content {

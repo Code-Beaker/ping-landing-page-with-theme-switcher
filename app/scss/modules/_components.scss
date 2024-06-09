@@ -4,7 +4,7 @@
   border: 2px solid $color;
   font-family: $font;
   outline-offset: 0.125rem;
-  transition: 0.25s ease;
+  transition: scale 0.25s ease;
   font-size: var(--step-0);
 
   &:active {
@@ -30,7 +30,7 @@
   border: none;
   padding: 0.75rem 1.5rem;
   outline-offset: 0.125rem;
-  transition: 0.25s ease;
+  transition: scale 0.25s ease;
 
   &:hover {
     opacity: 0.85;
