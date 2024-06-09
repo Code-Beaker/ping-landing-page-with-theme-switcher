@@ -15,12 +15,14 @@
     <main>
       <div class="theme-toggle-wrapper">
         <button class="toggle-theme" id="themeToggle">
-          <i
-            id="toggleIcon"
-            aria-label="dark theme"
-            aria-hidden="false"
-            class="bi bi-moon"
-          ></i>
+          <span class="toggle-theme__icon">
+            <i
+              id="toggleIcon"
+              aria-label="dark theme"
+              aria-hidden="false"
+              class="bi bi-moon"
+            ></i>
+          </span>
         </button>
       </div>
       <div class="content__cols">
@@ -55,14 +57,14 @@
           />
         </div>
       </div>
+      <footer class="footer">
+        <p class="footer__year">
+          &copy; copyright
+          <span id="year">2024</span>
+          , Ping Inc. All rights reserved.
+        </p>
+      </footer>
     </main>
-    <footer class="footer">
-      <p class="footer__year">
-        &copy; copyright
-        <span id="year">2024</span>
-        , Ping Inc. All rights reserved.
-      </p>
-    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
