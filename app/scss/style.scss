@@ -5,6 +5,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .content__cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
